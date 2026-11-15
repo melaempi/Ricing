@@ -34,6 +34,8 @@ tooltip label { color: @fg; }
 #network { color: @green; }
 #pulseaudio { color: @blue; }
 #network.disconnected, #pulseaudio.muted { color: @coral; }
+#clock { transition: background 150ms ease; }
+#clock:hover { background: @overlay; color: #dbe6f0; }
 
 
 #custom-power { padding: 0 12px; margin: 6px 2px; border-radius: 10px; color: @coral; }

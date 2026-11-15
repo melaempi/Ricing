@@ -123,10 +123,11 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
+      "interval": 30,
+      "format": "{:%I:%M}",
+      "tooltip": false,
+      "on-click": "pkill -x yad || yad --calendar --undecorated --close-on-unfocus --no-buttons --skip-taskbar --width=420 --height=380"
+    }
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
