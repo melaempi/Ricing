@@ -1,0 +1,11 @@
+calendar {
+  background-color: #0d1925;
+  color: #bccddd;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 16px;
+}
+calendar:selected { background-color: #1d3550; color: #dbe6f0; border-radius: 8px; }
+calendar:indeterminate { color: #60778f; }
+calendar.header, calendar.button { color: #72a8bf; }
+calendar.highlight { color: #8aa9dc; }
