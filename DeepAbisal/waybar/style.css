@@ -1,0 +1,36 @@
+@import "colors.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: alpha(@surface, 0.92);
+  border: 1px solid alpha(@blue, 0.18);
+  border-radius: 14px;
+  color: @fg;
+}
+
+tooltip { background: @bg; border: 1px solid @overlay; border-radius: 8px; }
+tooltip label { color: @fg; }
+
+#custom-start { padding: 0 14px; margin: 6px 4px; border-radius: 10px; color: @cyan; font-size: 17px; }
+#custom-start:hover { background: @overlay; }
+
+#taskbar button { padding: 0 10px; margin: 6px 2px; border-radius: 10px; background: transparent; border-bottom: 2px solid transparent; }
+#taskbar button:hover { background: @overlay; }
+#taskbar button.active { background: @overlay; border-bottom: 2px solid @cyan; }
+
+#workspaces button { padding: 0 8px; margin: 6px 2px; border-radius: 8px; color: @muted; background: transparent; }
+#workspaces button:hover { background: @overlay; color: @fg; }
+#workspaces button.active { background: @overlay; color: @cyan; }
+
+#tray, #bluetooth, #network, #pulseaudio, #clock { padding: 0 10px; margin: 6px 2px; border-radius: 10px; }
+#bluetooth { color: @cyan; }
+#network { color: @green; }
+#pulseaudio { color: @blue; }
+#network.disconnected, #pulseaudio.muted { color: @coral; }
