@@ -34,3 +34,11 @@ tooltip label { color: @fg; }
 #network { color: @green; }
 #pulseaudio { color: @blue; }
 #network.disconnected, #pulseaudio.muted { color: @coral; }
+
+
+#custom-power { padding: 0 12px; margin: 6px 2px; border-radius: 10px; color: @coral; }
+#custom-power:hover { background: @overlay; }
+
+menu { background: @surface; color: @fg; border: 1px solid @overlay; border-radius: 10px; padding: 4px; }
+menuitem { padding: 6px 14px; border-radius: 8px; }
+menuitem:hover { background: @overlay; }
